@@ -101,3 +101,17 @@ C:\Users\Matthew.Berry\Downloads\DX_Sample\NewProject\NewProject\obj\x86\Debug\N
 C:\Users\Matthew.Berry\Downloads\DX_Sample\NewProject\NewProject\obj\x86\Debug\NewProject.csproj.CopyComplete
 C:\Users\Matthew.Berry\Downloads\DX_Sample\NewProject\NewProject\obj\x86\Debug\NewProject.exe
 C:\Users\Matthew.Berry\Downloads\DX_Sample\NewProject\NewProject\obj\x86\Debug\NewProject.pdb
+C:\source\git\MattTest\NewProject\obj\x86\Debug\NewProject.csprojResolveAssemblyReference.cache
+C:\source\git\MattTest\NewProject\obj\x86\Debug\NewProject.Form1.resources
+C:\source\git\MattTest\NewProject\obj\x86\Debug\NewProject.Properties.Resources.resources
+C:\source\git\MattTest\NewProject\obj\x86\Debug\NewProject.csproj.GenerateResource.Cache
+C:\source\git\MattTest\NewProject\obj\x86\Debug\NewProject.exe.licenses
+C:\source\git\MattTest\NewProject\obj\x86\Debug\NewProject.exe
+C:\source\git\MattTest\NewProject\obj\x86\Debug\NewProject.pdb
+C:\source\git\MattTest\NewProject\bin\Debug\NewProject.exe.config
+C:\source\git\MattTest\NewProject\bin\Debug\NewProject.exe.manifest
+C:\source\git\MattTest\NewProject\bin\Debug\NewProject.application
+C:\source\git\MattTest\NewProject\bin\Debug\NewProject.exe
+C:\source\git\MattTest\NewProject\bin\Debug\NewProject.pdb
+C:\source\git\MattTest\NewProject\obj\x86\Debug\NewProject.exe.manifest
+C:\source\git\MattTest\NewProject\obj\x86\Debug\NewProject.application
