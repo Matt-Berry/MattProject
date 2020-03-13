@@ -21,8 +21,8 @@ jobs:
 #      env:
 #        GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
         
-#    - name: Run Build
-#      run: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe NewProject.sln /t:build /p:TargetFrameworkSDKToolsDirectory="C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools"
+    - name: Run Build
+      run: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe NewProject.sln /t:build /p:TargetFrameworkSDKToolsDirectory="C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools"
 
     - name: JFrog Upload
       run: jfrog rt u newproject.exe "nuget-snapshot-virtual/ahc/adastra/"
