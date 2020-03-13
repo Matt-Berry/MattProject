@@ -24,5 +24,10 @@ jobs:
     - name: Run Build
       run: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe NewProject.sln /t:build /p:TargetFrameworkSDKToolsDirectory="C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools"
 
-    - name: JFrog Upload
-      run: jfrog rt u newproject/bin/debug/newproject.exe "nuget-snapshot-virtual/ahc/adastra/"
+    - name: Create Zip
+      uses: montudor/action-zip@v0.1.0
+      with:
+        args: zip -qq -r ./NewProject.zip newproject/bin/debug/newproject.exe 
+
+#    - name: JFrog Upload
+#      run: jfrog rt u newproject/bin/debug/newproject.exe "nuget-snapshot-virtual/ahc/adastra/"
