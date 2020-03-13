@@ -4,8 +4,9 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: windows-latest
+    env:
+      JF_ARTIFACTORY_1: "eyJ2ZXJzaW9uIjoxLCJ1cmwiOiJodHRwczovL2FkdmFuY2VkY3NnLmpmcm9nLmlvL2FkdmFuY2VkY3NnLyIsInVzZXIiOiJtYXR0LWJlcnJ5IiwicGFzc3dvcmQiOiJBS0NwNWNja1NOYjVDUlBzb2dBTHE4QWhiOWNiQjRXWUY2eGZBMW5WNUoxRDNhMUNOU3U3U3lNWmR5d2tSMUhDQWZKNGdEV1JHIiwic2VydmVySWQiOiJtYXR0SmZyb2cifQ=="
 
     steps:
     - uses: actions/checkout@v1
@@ -18,7 +19,10 @@ jobs:
         
     - name: Run Build
       run: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe NewProject.sln /t:build /p:TargetFrameworkSDKToolsDirectory="C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools"
-    - uses: actions/upload-artifact@master
-      with:
-        name: NewProject
-        path: NewProject\bin\debug
+    #- uses: actions/upload-artifact@master
+    #  with:
+    #    name: NewProject
+    #    path: NewProject\bin\debug
+        
+     - name: JFrog Upload
+       run: jfrog rt u newproject.exe nuget-snapshot-virtual/ahc/adastra/ 
